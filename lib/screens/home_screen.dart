@@ -51,22 +51,6 @@ class HomeScreen extends StatelessWidget {
       streakDate = streakDate.subtract(const Duration(days: 1));
     }
 
-    final checkedDates = entries
-        .map((entry) => DateTime(entry.date.year, entry.date.month, entry.date.day))
-        .toSet();
-    final todayDate = DateTime(today.year, today.month, today.day);
-    final yesterdayDate = todayDate.subtract(const Duration(days: 1));
-    var streak = 0;
-    DateTime? streakDate = checkedDates.contains(todayDate)
-        ? todayDate
-        : checkedDates.contains(yesterdayDate)
-            ? yesterdayDate
-            : null;
-    while (streakDate != null && checkedDates.contains(streakDate)) {
-      streak++;
-      streakDate = streakDate.subtract(const Duration(days: 1));
-    }
-
     return ListView(
       padding: const EdgeInsets.fromLTRB(22, 18, 22, 28),
       children: [
