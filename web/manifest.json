@@ -1,0 +1,35 @@
+{
+  "name": "MoodBloom \u2014 Grow a Garden, One Feeling at a Time",
+  "short_name": "MoodBloom",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFF4F7",
+  "theme_color": "#F8E5EC",
+  "description": "A gentle mood journal where every check-in plants a seed and every act of self-care helps your garden grow.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
